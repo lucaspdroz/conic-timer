@@ -1,0 +1,25 @@
+body {
+    display: grid;
+    height: 100vh;
+    background-color: #000;
+    background: linear-gradient(to top right, #000093, #000);
+    place-items: center;
+}
+
+.conic {
+    width: 50vh;
+    height: 50vh;
+    border-radius: 100%;
+    background: conic-gradient(from 0deg at 50% 50%, #000093, #0173be);
+    animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        rotate: 0deg;
+    }
+
+    to {
+        rotate: 360deg;
+    }
+}
